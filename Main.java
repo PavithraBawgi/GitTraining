@@ -1,11 +1,11 @@
-class a{
+class a{ // class 
     public void run()
     {
         System.out.println("class a rum method");
     }
 
 }
-class b extends a{
+class b extends a{ // inheritance
     public void run1()
     {
         System.out.println("this is child class");
@@ -13,7 +13,7 @@ class b extends a{
 
 
 }
-class overloadingexample{
+class overloadingexample{ // polymorphism : overloading
     void add(int a,int b){
         System.out.println(a+b);
 
@@ -22,7 +22,7 @@ class overloadingexample{
         System.out.println(a+b+c);
     }
 }
-class overridingexample{
+class overridingexample{ // Polymorphism : overriding
     void sub(){
         System.out.println("overriding example from parent class");
     }
@@ -32,7 +32,7 @@ class child extends overridingexample{
         System.out.println("overriding example from child class");
     }
 }
-interface d{
+interface d{  // Abstraction using interface
     void run3();
 }
 class e implements d {
@@ -40,7 +40,7 @@ class e implements d {
         System.out.println("Interface is implemented");
     }
 }
-abstract class f{
+abstract class f{ //Abstraction using abstract class
       abstract void run4();
 }
 class g extends f{
@@ -48,7 +48,7 @@ class g extends f{
          System.out.println("abstraction implemented using abstract class");
      }
 }
-class h{
+class h{ // Access specifiers
     private int x;
     public int run5()
     {
@@ -62,11 +62,8 @@ class h{
 }
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
+        
         System.out.printf("Hello and welcome!");
-
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
         b b1=new b();
         b1.run();
         b1.run1();
